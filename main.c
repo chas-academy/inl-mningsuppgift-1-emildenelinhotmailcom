@@ -43,12 +43,17 @@ int main()
         sum = sum + roll[i];
     }
 
+    // Calculate average
+    float average = sum / 100.0F;
+
+
     // Print results
     for (int i = 0; i < 6; i++)
     {
         printf("%d\n", results[i]);
     }
     printf("%d\n", sum);
+    printf("%.1f\n", average);
 
     return 0;
 }
