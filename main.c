@@ -16,6 +16,7 @@ int main()
     for (int i = 0; i < 100; i++)
     {
         roll[i] = (rand() % 6) + 1;
+        //printf("roll %d\n", roll[i]);
         switch (roll[i])
         {
         case 1:
@@ -40,9 +41,9 @@ int main()
         default:
             break;
         }
-        sum = sum + roll[i];
+        sum += roll[i];
     }
-
+    
     // Calculate average
     float average = sum / 100.0F;
 
@@ -54,6 +55,6 @@ int main()
     }
     printf("%d\n", sum);
     printf("%.1f\n", average);
-
+    
     return 0;
 }
